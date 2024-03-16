@@ -9,7 +9,7 @@ export const Allroutes = () => {
   return (
     <div className="dark:bg-darkbg">
     <Routes>
-        <Route path="/" element={<Movielist apiPath="movie/now_playing" title=""/>}  />
+        <Route path="/" element={<Movielist apiPath="movie/now_playing"/>}  />
         <Route path="movie/:id" element={<MovieDetail />} />
         <Route path="movies/popular" element={<Movielist apiPath="movie/popular" title="Popular"/>} />
         <Route path="movies/upcoming" element={<Movielist apiPath="movie/upcoming" title="Upcoming"/>}  />
